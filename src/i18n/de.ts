@@ -392,6 +392,8 @@ export const de: Partial<Messages> = {
   'footer.moreX402': 'x402-Zahlungen',
   'footer.moreNodeTester': 'Sentinel Node Tester',
   'footer.moreContact': 'Kontakt',
-  'footer.copyright': 'Sentinel © 2026',
+  'footer.copyright': '© 2026 Capybara Publishing Ltd. Alle Rechte vorbehalten.',
   'footer.privacyPolicy': 'Datenschutzrichtlinie',
+  'footer.trademarks': 'Sentinel™ und DVPN™ sind Marken von Nordic DApps Inc.',
+  'footer.groupNotice': 'Capybara Publishing Ltd ist Teil der Nordic DApps Group.',
 };

@@ -427,8 +427,10 @@ export const en = {
   'footer.moreX402': 'x402 Payments',
   'footer.moreNodeTester': 'Sentinel Node Tester',
   'footer.moreContact': 'Contact Us',
-  'footer.copyright': 'Sentinel © 2026',
+  'footer.copyright': '© 2026 Capybara Publishing Ltd. All rights reserved.',
   'footer.privacyPolicy': 'Privacy Policy',
+  'footer.trademarks': 'Sentinel™ and DVPN™ are trademarks of Nordic DApps Inc.',
+  'footer.groupNotice': 'Capybara Publishing Ltd is part of the Nordic DApps Group.',
 } as const;
 
 export type StringKey = keyof typeof en;

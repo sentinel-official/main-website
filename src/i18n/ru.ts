@@ -418,6 +418,8 @@ export const ru: Partial<Messages> = {
   'footer.moreX402': 'Платежи x402',
   'footer.moreNodeTester': 'Sentinel Node Tester',
   'footer.moreContact': 'Связаться с нами',
-  'footer.copyright': 'Sentinel © 2026',
+  'footer.copyright': '© 2026 Capybara Publishing Ltd. Все права защищены.',
   'footer.privacyPolicy': 'Политика конфиденциальности',
+  'footer.trademarks': 'Sentinel™ и DVPN™ — товарные знаки Nordic DApps Inc.',
+  'footer.groupNotice': 'Capybara Publishing Ltd входит в состав Nordic DApps Group.',
 };

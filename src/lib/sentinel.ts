@@ -77,7 +77,7 @@ export const SENTINEL_LINKS = {
   github: 'https://github.com/sentinel-official',
   dapps: 'https://www.sentinel.co/dapps',
   home: 'https://sentinel.co/',
-  privacy: 'https://sentinel.co/legal/privacy',
+  privacy: '/legal/privacy', // served by src/pages/legal/privacy.astro
 
   // Network / explorer
   stats: 'https://stats.sentinel.co/',

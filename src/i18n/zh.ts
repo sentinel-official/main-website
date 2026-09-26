@@ -352,6 +352,8 @@ export const zh: Partial<Messages> = {
   'footer.moreX402': 'x402 支付',
   'footer.moreNodeTester': 'Sentinel Node Tester',
   'footer.moreContact': '联系我们',
-  'footer.copyright': 'Sentinel © 2026',
+  'footer.copyright': '© 2026 Capybara Publishing Ltd. 保留所有权利。',
   'footer.privacyPolicy': '隐私政策',
+  'footer.trademarks': 'Sentinel™ 和 DVPN™ 是 Nordic DApps Inc. 的商标。',
+  'footer.groupNotice': 'Capybara Publishing Ltd 隶属于 Nordic DApps Group。',
 };

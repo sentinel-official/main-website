@@ -392,6 +392,8 @@ export const fa: Partial<Messages> = {
   'footer.moreX402': 'پرداخت‌های x402',
   'footer.moreNodeTester': 'Sentinel Node Tester',
   'footer.moreContact': 'تماس با ما',
-  'footer.copyright': 'Sentinel © 2026',
+  'footer.copyright': '© 2026 Capybara Publishing Ltd. تمامی حقوق محفوظ است.',
   'footer.privacyPolicy': 'سیاست حریم خصوصی',
+  'footer.trademarks': 'Sentinel™ و DVPN™ علائم تجاری شرکت Nordic DApps Inc. هستند.',
+  'footer.groupNotice': 'Capybara Publishing Ltd بخشی از Nordic DApps Group است.',
 };

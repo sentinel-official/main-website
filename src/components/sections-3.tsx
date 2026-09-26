@@ -290,13 +290,16 @@ function Footer() {
 
         {/* Bottom bar */}
         <div style={{ display:'flex', flexDirection:isMobile?'column':'row', alignItems:isMobile?'flex-start':'center', justifyContent:'space-between', gap:isMobile?16:0, paddingTop:18, borderTop:'1px solid rgba(255,255,255,0.06)', paddingBottom:28 }}>
-          <div style={{ display:'flex', gap:22, alignItems:'center' }}>
-            {[
-              ['Sentinel © 2026', L3.home,    'footer.copyright'],
-              ['Privacy Policy',  L3.privacy, 'footer.privacyPolicy'],
-            ].map(([label, url, labelKey]) => (
-              <a key={label} href={url} target="_blank" rel="noopener noreferrer" style={{ fontFamily:T3.fontBody, fontSize:13, color:'rgba(255,255,255,0.45)', textDecoration:'none' }}>{tr(labelKey, label)}</a>
-            ))}
+          {/* Legal block: copyright + privacy link, then trademark and group notices */}
+          <div style={{ display:'flex', flexDirection:'column', gap:6, fontFamily:T3.fontBody, color:'rgba(255,255,255,0.45)' }}>
+            <div style={{ display:'flex', flexWrap:'wrap', gap:'4px 22px', alignItems:'center', fontSize:13, lineHeight:'20px' }}>
+              <span>{tr('footer.copyright', '© 2026 Capybara Publishing Ltd. All rights reserved.')}</span>
+              <a href={L3.privacy} target="_blank" rel="noopener noreferrer" style={{ color:'inherit', textDecoration:'none' }}>{tr('footer.privacyPolicy', 'Privacy Policy')}</a>
+            </div>
+            <div style={{ fontSize:12, lineHeight:'18px' }}>
+              <div>{tr('footer.trademarks', 'Sentinel™ and DVPN™ are trademarks of Nordic DApps Inc.')}</div>
+              <div>{tr('footer.groupNotice', 'Capybara Publishing Ltd is part of the Nordic DApps Group.')}</div>
+            </div>
           </div>
           <div style={{ display:'flex', gap:16, alignItems:'center' }}>
             {[

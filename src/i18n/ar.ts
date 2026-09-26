@@ -392,6 +392,8 @@ export const ar: Partial<Messages> = {
   'footer.moreX402': 'مدفوعات x402',
   'footer.moreNodeTester': 'Sentinel Node Tester',
   'footer.moreContact': 'تواصل معنا',
-  'footer.copyright': 'Sentinel © 2026',
+  'footer.copyright': '© 2026 Capybara Publishing Ltd. جميع الحقوق محفوظة.',
   'footer.privacyPolicy': 'سياسة الخصوصية',
+  'footer.trademarks': 'Sentinel™ وDVPN™ علامتان تجاريتان لشركة Nordic DApps Inc.',
+  'footer.groupNotice': 'Capybara Publishing Ltd جزء من Nordic DApps Group.',
 };

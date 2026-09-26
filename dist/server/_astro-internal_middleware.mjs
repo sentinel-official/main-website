@@ -1,10 +1,10 @@
-import { e as defineMiddleware, s as sequence } from './chunks/render-context_BDTmhSEO.mjs';
-import { m as makeT, a as messagesFor, r as resolveLocale, l as localeDir, s as setActiveLocale, b as setServerIsMobile } from './chunks/globals_DWMYv18N.mjs';
+import { e as defineMiddleware, s as sequence } from './chunks/render-context_BSFEAqjv.mjs';
+import { m as makeT, a as messagesFor, r as resolveLocale, l as localeDir, s as setActiveLocale, b as setServerIsMobile } from './chunks/globals_Cl1Fwrq0.mjs';
 import { AsyncLocalStorage } from 'node:async_hooks';
 import 'es-module-lexer';
-import './chunks/astro-designed-error-pages_BjDLxeEP.mjs';
+import './chunks/astro-designed-error-pages_BbR2I8P-.mjs';
 import 'piccolore';
-import './chunks/astro/server_BvRpWg5T.mjs';
+import './chunks/astro/server_BDwfCOmG.mjs';
 import 'clsx';
 
 const requestStore = new AsyncLocalStorage();

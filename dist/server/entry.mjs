@@ -1,14 +1,16 @@
 import { renderers } from './renderers.mjs';
-import { c as createExports, s as serverEntrypointModule } from './chunks/_@astrojs-ssr-adapter_DGV0wVBb.mjs';
-import { manifest } from './manifest_DMi_6TnH.mjs';
+import { c as createExports, s as serverEntrypointModule } from './chunks/_@astrojs-ssr-adapter_DoV9P3QM.mjs';
+import { manifest } from './manifest_DtPdrNgB.mjs';
 
 const serverIslandMap = new Map();;
 
 const _page0 = () => import('./pages/_image.astro.mjs');
-const _page1 = () => import('./pages/index.astro.mjs');
+const _page1 = () => import('./pages/legal/privacy.astro.mjs');
+const _page2 = () => import('./pages/index.astro.mjs');
 const pageMap = new Map([
     ["node_modules/astro/dist/assets/endpoint/node.js", _page0],
-    ["src/pages/index.astro", _page1]
+    ["src/pages/legal/privacy.astro", _page1],
+    ["src/pages/index.astro", _page2]
 ]);
 
 const _manifest = Object.assign(manifest, {
@@ -20,8 +22,8 @@ const _manifest = Object.assign(manifest, {
 });
 const _args = {
     "mode": "standalone",
-    "client": "file:///C:/Users/Connect/Desktop/main-website-deploy/dist/client/",
-    "server": "file:///C:/Users/Connect/Desktop/main-website-deploy/dist/server/",
+    "client": "file:///Users/alexlitreev/Projects/main-website/dist/client/",
+    "server": "file:///Users/alexlitreev/Projects/main-website/dist/server/",
     "host": true,
     "port": 4321,
     "assets": "_astro",

@@ -9,6 +9,10 @@ import '../styles/global.css';
 interface Props {
   title?: string;
   description?: string;
+  // One-off pages whose content exists in a single language (e.g. legal text)
+  // can pin the document language/direction instead of inheriting the UI locale.
+  lang?: string;
+  dir?: 'ltr' | 'rtl';
 }
 
 // i18n: the middleware resolves the locale per request and stashes the active
@@ -18,8 +22,10 @@ const i18n = Astro.locals.i18n;
 const {
   title = i18n.title,
   description = i18n.description,
+  lang = i18n.locale,
+  dir = i18n.dir,
 } = Astro.props;
-const { locale, dir, ogImageAlt } = i18n;
+const { ogImageAlt } = i18n;
 
 // Server's coarse UA-based mobile guess (middleware). Seeded onto the page so the
 // island hydrates with the same isMobile the server rendered with — no flash.
@@ -37,11 +43,11 @@ const OG_LOCALES: Record<string, string> = {
   en: 'en_US', es: 'es_ES', zh: 'zh_CN', ru: 'ru_RU', de: 'de_DE',
   fr: 'fr_FR', ar: 'ar_AR', fa: 'fa_IR', pt: 'pt_BR',
 };
-const ogLocale = OG_LOCALES[locale] ?? locale;
+const ogLocale = OG_LOCALES[lang] ?? lang;
 ---
 
 <!DOCTYPE html>
-<html lang={locale} dir={dir}>
+<html lang={lang} dir={dir}>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -102,7 +108,7 @@ const ogLocale = OG_LOCALES[locale] ?? locale;
     <!-- Seed the active locale before the React island hydrates, so the client's
          globals bootstrap (lib/globals.ts) re-applies the same locale the server
          rendered with — keeping SSR markup and hydration in sync. -->
-    <script is:inline define:vars={{ locale, isMobile }}>
+    <script is:inline define:vars={{ locale: i18n.locale, isMobile }}>
       window.__locale = locale;
       window.__isMobile = isMobile;
     </script>

@@ -116,7 +116,7 @@ const NAV_MENUS = {
   dVPN: {
     cols: 2, width: 660,
     items: [
-      { tk:'nav.dvpn.downloadTitle', dk:'nav.dvpn.downloadDesc', title:'Download Apps', desc:'Sentinel Shield, Norse, Valt, Meile and more.',    href:'#use-dvpn'    },
+      { tk:'nav.dvpn.downloadTitle', dk:'nav.dvpn.downloadDesc', title:'Download Apps', desc:'Sentinel dVPN App, DVPN App, VALT and more.', href:'#use-dvpn'    },
       { tk:'nav.dvpn.coverageTitle', dk:'nav.dvpn.coverageDesc', title:'Coverage',      desc:'110+ Countries, 430+ Cities.',                     href:L.nodeMap      },
       { tk:'nav.dvpn.learnTitle',    dk:'nav.dvpn.learnDesc',    title:'Learn',         desc:'Explore guides, documentation, and more.',         href:L.docs         },
       { tk:'nav.dvpn.runNodeTitle',  dk:'nav.dvpn.runNodeDesc',  title:'Run a Node',    desc:'Support the network and earn rewards.',            href:'#host-dvpn'   },

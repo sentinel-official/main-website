@@ -1,5 +1,5 @@
 import { e as defineMiddleware, s as sequence } from './chunks/render-context_BSFEAqjv.mjs';
-import { m as makeT, a as messagesFor, r as resolveLocale, l as localeDir, s as setActiveLocale, b as setServerIsMobile } from './chunks/globals_Cl1Fwrq0.mjs';
+import { m as makeT, a as messagesFor, r as resolveLocale, l as localeDir, s as setActiveLocale, b as setServerIsMobile } from './chunks/globals_BYLDc0vu.mjs';
 import { AsyncLocalStorage } from 'node:async_hooks';
 import 'es-module-lexer';
 import './chunks/astro-designed-error-pages_BbR2I8P-.mjs';

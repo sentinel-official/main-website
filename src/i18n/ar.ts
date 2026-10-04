@@ -23,7 +23,7 @@ export const ar: Partial<Messages> = {
   'nav.explore.ecosystemDesc': 'اكتشف التطبيقات والخدمات في نظامنا البيئي.',
 
   'nav.dvpn.downloadTitle': 'تنزيل التطبيقات',
-  'nav.dvpn.downloadDesc': 'Sentinel Shield وNorse وValt وMeile والمزيد.',
+  'nav.dvpn.downloadDesc': 'Sentinel dVPN App وDVPN App وVALT والمزيد.',
   'nav.dvpn.coverageTitle': 'التغطية',
   'nav.dvpn.coverageDesc': '110+ دولة، 430+ مدينة.',
   'nav.dvpn.learnTitle': 'تعلّم',
@@ -232,7 +232,6 @@ export const ar: Partial<Messages> = {
   'apps.rynDesc': 'VPN خصوصية نظيف وبسيط يثق به أكثر من 10M+ شخص.',
   'apps.independentDesc': 'VPN لامركزي مجاني على Sentinel — WireGuard وV2Ray.',
   'apps.encryptsimDesc': 'eSIM عالمي يُقدِّم الخصوصية أولاً — لا KYC، لا سجلات، تشفير بمستوى SOC2.',
-  'apps.meileDesc': 'dVPN لسطح المكتب مدعوم بـ Sentinel لـ macOS وLinux وWindows.',
   'apps.valtDesc': 'التقط وحمِ البيانات التي تنتجها كل يوم.',
 
   'centralized.heading': 'لا يمكنك الوثوق بشبكات VPN المركزية.',
@@ -337,10 +336,9 @@ export const ar: Partial<Messages> = {
   'ecosystem.shieldBody':
     'dVPN الرائد مفتوح المصدر من Sentinel P2P، WireGuard وV2Ray؛ Android وiOS.',
   'ecosystem.norseBody':
-    'تجربة VPN لامركزية مغلَّفة في تطبيقات سهلة الاستخدام لجميع المنصات.',
+    'تجربة VPN لامركزية في تطبيقات سهلة الاستخدام من NORSE Labs، متاحة على جميع المنصات.',
   'ecosystem.valtBody':
     'VALT هو التطبيق الوحيد الذي يتيح لك التقاط وحماية البيانات التي تنشئها يومياً.',
-  'ecosystem.meileBody': 'dVPN لسطح المكتب مدعوم بـ Sentinel لـ macOS وLinux وWindows.',
   'ecosystem.ctaTitle': 'أنشئ dVPN الخاص بك',
   'ecosystem.ctaBody':
     'استخدم Sentinel SDK لإطلاق شبكتك اللامركزية الخاصة — علامتك التجارية، بروتوكولك، توزيعك.',
@@ -351,9 +349,6 @@ export const ar: Partial<Messages> = {
   'community.heading': 'انضم إلى المجتمع',
   'community.subtitle': 'مجتمع Sentinel يتجاوز حدود السلسلة.',
   'community.discordHandle': 'Sentinel Network',
-  'community.more': 'المزيد من المجتمع',
-  'community.growthDao': 'Growth DAO',
-  'community.p2pNews': 'p2p News',
 
   'contact.heading': 'لنبني معاً',
   'contact.subtitle':
@@ -376,12 +371,11 @@ export const ar: Partial<Messages> = {
   'footer.exploreDashboard': 'لوحة تحكم العُقَد',
   'footer.exploreNodeMap': 'خريطة العقد',
   'footer.exploreExplorer': 'المستكشف',
-  'footer.dvpnShield': 'Sentinel Shield',
+  'footer.dvpnShield': 'Sentinel dVPN App',
   'footer.dvpnIndependent': 'VPN مستقل',
-  'footer.dvpnNorse': 'DVPN by NORSE',
+  'footer.dvpnNorse': 'DVPN App',
   'footer.dvpnValt': 'VALT',
   'footer.dvpnRyn': 'Ryn dVPN',
-  'footer.dvpnMeile': 'Meile dVPN (تجريبي)',
   'footer.buildPlanManager': 'Plan Manager',
   'footer.buildSdks': 'SDKs',
   'footer.buildPayments': 'ضبط الدفع',

@@ -44,7 +44,6 @@ export const RESOURCES: Record<string, string> = {
   ecoSentinelShield: '/assets/img/ecoSentinelShield.svg',
   ecoIndependent: '/assets/img/ecoIndependent.svg',
   ecoRyn: '/assets/img/ecoRyn.png',
-  ecoMeile: '/assets/img/ecoMeile.png',
 
   // Compare
   cmpI2p: '/assets/img/cmpI2p.svg',

@@ -48,25 +48,6 @@ function CommunityCard({ icon, name, handle, color, href }) {
   );
 }
 
-/* ── Secondary community pill ────────────────────────────── */
-function CommunityPill({ icon, label, color, href }) {
-  const [hovered, setHovered] = useS(false);
-  return (
-    <a href={href} target="_blank" rel="noopener noreferrer"
-       onMouseEnter={() => setHovered(true)}
-       onMouseLeave={() => setHovered(false)}
-       style={{
-         display:'inline-flex', alignItems:'center', gap:8, padding:'8px 16px 8px 12px',
-         borderRadius:9999, border: `1px solid ${hovered ? color : '#ececec'}`,
-         background: hovered ? `${color}0F` : '#fff', textDecoration:'none',
-         transition:'all 200ms cubic-bezier(.22,.61,.36,1)', boxSizing:'border-box',
-       }}>
-      <span style={{ display:'inline-flex', alignItems:'center', justifyContent:'center', color, flexShrink:0, transform:'scale(0.78)', transformOrigin:'center' }}>{icon}</span>
-      <span style={{ fontFamily:T3.fontBody, fontSize:13, fontWeight:500, color: hovered ? 'rgba(0,0,0,0.82)' : 'rgba(0,0,0,0.6)', whiteSpace:'nowrap', transition:'color 200ms' }}>{label}</span>
-    </a>
-  );
-}
-
 /* ── Community icon SVGs ─────────────────────────────────── */
 const IconX = () => (
   <svg width="21" height="20" viewBox="0 0 21.123 19.093" fill="currentColor">
@@ -117,11 +98,6 @@ function ContactSection() {
     { icon:<IconDiscord />,  name:'Discord',     handle:'Sentinel Network',  color:'#5865F2', href:L3.discord  },
     { icon:<IconGitHub />,   name:'GitHub',      handle:'sentinel-official', color:'#24292F', href:L3.github   },
   ];
-  const secondary = [
-    { icon:<IconTelegram />, label:'Growth DAO', color:'#229ED9', href:L3.growthDao },
-    { icon:<IconTelegram />, label:'p2p News',   color:'#229ED9', href:L3.p2pNews   },
-    { icon:<IconX />,        label:'Bluefrens',  color:'#0F1419', href:L3.bluefrens },
-  ];
 
   const fieldStyle = {
     width:'100%', boxSizing:'border-box', height:54, padding:'0 18px',
@@ -155,15 +131,6 @@ function ContactSection() {
               {primary.map(c => (
                 <CommunityCard key={c.name} icon={c.icon} name={c.name} handle={c.handle} color={c.color} href={c.href} />
               ))}
-            </div>
-            {/* secondary channels */}
-            <div style={{ display:'flex', flexDirection:'column', gap:12, alignItems:SHOW_CONTACT_FORM?'flex-start':'center' }}>
-              <span style={{ fontFamily:T3.fontBody, fontWeight:600, fontSize:11, letterSpacing:'0.14em', textTransform:'uppercase', color:'rgba(0,0,0,0.35)' }}>{tr('community.more', 'More from the community')}</span>
-              <div style={{ display:'flex', flexWrap:'wrap', gap:8, justifyContent:SHOW_CONTACT_FORM?'flex-start':'center' }}>
-                {secondary.map(c => (
-                  <CommunityPill key={c.label} icon={c.icon} label={c.label} color={c.color} href={c.href} />
-                ))}
-              </div>
             </div>
           </div>
 
@@ -234,12 +201,11 @@ function Footer() {
       ['Explorer',           L3.explorer, 'footer.exploreExplorer'],
     ]},
     { head:'dVPN', headKey:'nav.dvpn', links:[
-      ['Sentinel Shield',    L3.sentinelShield, 'footer.dvpnShield'],
+      ['Sentinel dVPN App',  L3.sentinelShield, 'footer.dvpnShield'],
       ['Independent VPN',    L3.independent,     'footer.dvpnIndependent'],
-      ['DVPN by NORSE',      L3.norse,           'footer.dvpnNorse'],
+      ['DVPN App',           L3.norse,           'footer.dvpnNorse'],
       ['VALT',               L3.valt,            'footer.dvpnValt'],
       ['Ryn dVPN',           L3.rynVpn,          'footer.dvpnRyn'],
-      ['Meile dVPN (beta)',  L3.meile,           'footer.dvpnMeile'],
     ]},
     { head:'Build', headKey:'nav.build', links:[
       ['Plan Manager',       L3.planManager,  'footer.buildPlanManager'],

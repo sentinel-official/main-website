@@ -36,7 +36,7 @@ export const en = {
 
   // ─── Nav: dVPN dropdown ───
   'nav.dvpn.downloadTitle': 'Download Apps',
-  'nav.dvpn.downloadDesc': 'Sentinel Shield, Norse, Valt, Meile and more.',
+  'nav.dvpn.downloadDesc': 'Sentinel dVPN App, DVPN App, VALT and more.',
   'nav.dvpn.coverageTitle': 'Coverage',
   'nav.dvpn.coverageDesc': '110+ Countries, 430+ Cities.',
   'nav.dvpn.learnTitle': 'Learn',
@@ -261,7 +261,6 @@ export const en = {
   'apps.rynDesc': 'A clean, minimalist privacy VPN trusted by 10M+ people.',
   'apps.independentDesc': 'Free decentralized VPN on Sentinel — WireGuard & V2Ray.',
   'apps.encryptsimDesc': 'Privacy-first global eSIM — no KYC, no logs, SOC2-grade encryption.',
-  'apps.meileDesc': 'Sentinel-powered desktop dVPN for macOS, Linux & Windows.',
   'apps.valtDesc': 'Capture and protect the data you create every day.',
 
   // ─── Trust-compare (centralized vs Sentinel) section ───
@@ -369,10 +368,9 @@ export const en = {
   'ecosystem.shieldBody':
     'Flagship open-source dVPN by Sentinel P2P, WireGuard & V2Ray; Android & iOS.',
   'ecosystem.norseBody':
-    'Decentralized VPN experience wrapped into user-friendly apps for all platforms.',
+    'A decentralized VPN experience wrapped in user-friendly apps by NORSE Labs, available on all platforms.',
   'ecosystem.valtBody':
     'VALT is the only app available that allows you to capture and protect the data you create everyday.',
-  'ecosystem.meileBody': 'Sentinel-powered desktop dVPN for macOS, Linux & Windows.',
   'ecosystem.ctaTitle': 'Make your own dVPN',
   'ecosystem.ctaBody':
     'Use the Sentinel SDK to ship your own decentralized VPN — your brand, your protocol, your distribution.',
@@ -384,9 +382,6 @@ export const en = {
   'community.heading': 'Join the Community',
   'community.subtitle': 'The Sentinel community goes beyond the chain.',
   'community.discordHandle': 'Sentinel Network',
-  'community.more': 'More from the community',
-  'community.growthDao': 'Growth DAO',
-  'community.p2pNews': 'p2p News',
 
   // ─── Contact form ───
   'contact.heading': "Let's Build Together",
@@ -411,12 +406,11 @@ export const en = {
   'footer.exploreDashboard': 'Node Explorer',
   'footer.exploreNodeMap': 'Node Map',
   'footer.exploreExplorer': 'Explorer',
-  'footer.dvpnShield': 'Sentinel Shield',
+  'footer.dvpnShield': 'Sentinel dVPN App',
   'footer.dvpnIndependent': 'Independent VPN',
-  'footer.dvpnNorse': 'DVPN by NORSE',
+  'footer.dvpnNorse': 'DVPN App',
   'footer.dvpnValt': 'VALT',
   'footer.dvpnRyn': 'Ryn dVPN',
-  'footer.dvpnMeile': 'Meile dVPN (beta)',
   'footer.buildPlanManager': 'Plan Manager',
   'footer.buildSdks': 'SDKs',
   'footer.buildPayments': 'Configure Payment',

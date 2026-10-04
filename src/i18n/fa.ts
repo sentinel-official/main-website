@@ -23,7 +23,7 @@ export const fa: Partial<Messages> = {
   'nav.explore.ecosystemDesc': 'اپلیکیشن‌ها و سرویس‌های اکوسیستم ما را کشف کنید.',
 
   'nav.dvpn.downloadTitle': 'دانلود اپلیکیشن‌ها',
-  'nav.dvpn.downloadDesc': 'Sentinel Shield، Norse، Valt، Meile و بیشتر.',
+  'nav.dvpn.downloadDesc': 'Sentinel dVPN App، DVPN App، VALT و بیشتر.',
   'nav.dvpn.coverageTitle': 'پوشش',
   'nav.dvpn.coverageDesc': '110+ کشور، 430+ شهر.',
   'nav.dvpn.learnTitle': 'یادگیری',
@@ -232,7 +232,6 @@ export const fa: Partial<Messages> = {
   'apps.rynDesc': 'یک VPN حریم خصوصی ساده و مینیمالیستی مورد اعتماد 10M+ نفر.',
   'apps.independentDesc': 'VPN غیرمتمرکز رایگان روی Sentinel — WireGuard و V2Ray.',
   'apps.encryptsimDesc': 'eSIM جهانی اول حریم خصوصی — بدون KYC، بدون لاگ، رمزگذاری SOC2.',
-  'apps.meileDesc': 'dVPN دسکتاپ مبتنی بر Sentinel برای macOS، Linux و Windows.',
   'apps.valtDesc': 'داده‌هایی که هر روز ایجاد می‌کنید را ضبط و محافظت کنید.',
 
   'centralized.heading': 'نمی‌توانید به VPN‌های متمرکز اعتماد کنید.',
@@ -337,10 +336,9 @@ export const fa: Partial<Messages> = {
   'ecosystem.shieldBody':
     'dVPN پرچمدار منبع باز توسط Sentinel P2P، WireGuard و V2Ray؛ Android و iOS.',
   'ecosystem.norseBody':
-    'تجربه VPN غیرمتمرکز در قالب اپ‌های کاربرپسند برای همه پلتفرم‌ها.',
+    'تجربه VPN غیرمتمرکز در قالب اپ‌های کاربرپسند از NORSE Labs، در دسترس برای همه پلتفرم‌ها.',
   'ecosystem.valtBody':
     'VALT تنها اپ موجود است که به شما امکان می‌دهد داده‌هایی که هر روز ایجاد می‌کنید را ضبط و محافظت کنید.',
-  'ecosystem.meileBody': 'dVPN دسکتاپ مبتنی بر Sentinel برای macOS، Linux و Windows.',
   'ecosystem.ctaTitle': 'dVPN خود را بسازید',
   'ecosystem.ctaBody':
     'از Sentinel SDK استفاده کنید تا VPN غیرمتمرکز خود را ارسال کنید — برند شما، پروتکل شما، توزیع شما.',
@@ -351,9 +349,6 @@ export const fa: Partial<Messages> = {
   'community.heading': 'به جامعه بپیوندید',
   'community.subtitle': 'جامعه Sentinel فراتر از زنجیره است.',
   'community.discordHandle': 'Sentinel Network',
-  'community.more': 'بیشتر از جامعه',
-  'community.growthDao': 'Growth DAO',
-  'community.p2pNews': 'p2p News',
 
   'contact.heading': 'بیایید با هم بسازیم',
   'contact.subtitle':
@@ -376,12 +371,11 @@ export const fa: Partial<Messages> = {
   'footer.exploreDashboard': 'داشبورد نود',
   'footer.exploreNodeMap': 'نقشه نود',
   'footer.exploreExplorer': 'اکسپلورر',
-  'footer.dvpnShield': 'Sentinel Shield',
+  'footer.dvpnShield': 'Sentinel dVPN App',
   'footer.dvpnIndependent': 'VPN مستقل',
-  'footer.dvpnNorse': 'dVPN توسط NORSE',
+  'footer.dvpnNorse': 'DVPN App',
   'footer.dvpnValt': 'VALT',
   'footer.dvpnRyn': 'Ryn dVPN',
-  'footer.dvpnMeile': 'Meile dVPN (بتا)',
   'footer.buildPlanManager': 'Plan Manager',
   'footer.buildSdks': 'SDKها',
   'footer.buildPayments': 'تنظیم پرداخت',

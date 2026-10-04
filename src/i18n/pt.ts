@@ -26,7 +26,7 @@ export const pt: Partial<Messages> = {
 
   // ─── Nav: dVPN dropdown ───
   'nav.dvpn.downloadTitle': 'Baixar Aplicativos',
-  'nav.dvpn.downloadDesc': 'Sentinel Shield, Norse, Valt, Meile e muito mais.',
+  'nav.dvpn.downloadDesc': 'Sentinel dVPN App, DVPN App, VALT e muito mais.',
   'nav.dvpn.coverageTitle': 'Cobertura',
   'nav.dvpn.coverageDesc': '110+ Países, 430+ Cidades.',
   'nav.dvpn.learnTitle': 'Aprender',
@@ -251,7 +251,6 @@ export const pt: Partial<Messages> = {
   'apps.rynDesc': 'Uma VPN de privacidade limpa e minimalista confiada por mais de 10M+ pessoas.',
   'apps.independentDesc': 'VPN descentralizada gratuita no Sentinel — WireGuard e V2Ray.',
   'apps.encryptsimDesc': 'eSIM global com privacidade em primeiro lugar — sem KYC, sem logs, criptografia padrão SOC2.',
-  'apps.meileDesc': 'dVPN desktop com tecnologia Sentinel para macOS, Linux e Windows.',
   'apps.valtDesc': 'Capture e proteja os dados que você cria todos os dias.',
 
   // ─── Trust-compare (centralized vs Sentinel) section ───
@@ -359,10 +358,9 @@ export const pt: Partial<Messages> = {
   'ecosystem.shieldBody':
     'dVPN open-source principal pela Sentinel P2P, WireGuard e V2Ray; Android e iOS.',
   'ecosystem.norseBody':
-    'Experiência de VPN descentralizada em apps fáceis de usar para todas as plataformas.',
+    'Uma experiência de VPN descentralizada em apps fáceis de usar da NORSE Labs, disponíveis em todas as plataformas.',
   'ecosystem.valtBody':
     'VALT é o único app disponível que permite capturar e proteger os dados que você cria todos os dias.',
-  'ecosystem.meileBody': 'dVPN desktop com tecnologia Sentinel para macOS, Linux e Windows.',
   'ecosystem.ctaTitle': 'Crie seu próprio dVPN',
   'ecosystem.ctaBody':
     'Use o Sentinel SDK para lançar sua própria VPN descentralizada — sua marca, seu protocolo, sua distribuição.',
@@ -374,9 +372,6 @@ export const pt: Partial<Messages> = {
   'community.heading': 'Junte-se à Comunidade',
   'community.subtitle': 'A comunidade Sentinel vai além da cadeia.',
   'community.discordHandle': 'Sentinel Network',
-  'community.more': 'Mais da comunidade',
-  'community.growthDao': 'Growth DAO',
-  'community.p2pNews': 'p2p News',
 
   // ─── Contact form ───
   'contact.heading': 'Vamos Desenvolver Juntos',
@@ -401,12 +396,11 @@ export const pt: Partial<Messages> = {
   'footer.exploreDashboard': 'Painel de Nós',
   'footer.exploreNodeMap': 'Mapa de Nós',
   'footer.exploreExplorer': 'Explorador',
-  'footer.dvpnShield': 'Sentinel Shield',
+  'footer.dvpnShield': 'Sentinel dVPN App',
   'footer.dvpnIndependent': 'VPN Independent',
-  'footer.dvpnNorse': 'DVPN by NORSE',
+  'footer.dvpnNorse': 'DVPN App',
   'footer.dvpnValt': 'VALT',
   'footer.dvpnRyn': 'Ryn dVPN',
-  'footer.dvpnMeile': 'Meile dVPN (beta)',
   'footer.buildPlanManager': 'Plan Manager',
   'footer.buildSdks': 'SDKs',
   'footer.buildPayments': 'Configurar Pagamento',

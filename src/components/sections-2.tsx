@@ -412,13 +412,6 @@ const DVPN_APPS = [
         'iOS':     'https://www.encryptsim.com/',
         'Android': 'https://www.encryptsim.com/',
       } },
-    { name:'Meile dVPN', logo:window.__resources.ecoMeile,
-      descKey:'apps.meileDesc', desc:'Sentinel-powered desktop dVPN for macOS, Linux & Windows.',
-      links: {
-        'macOS':   'https://mathnodes.com/index.php/meile-dvpn-client-linux-os-x/',
-        'Linux':   'https://mathnodes.com/index.php/meile-dvpn-client-linux-os-x/',
-        'Windows': 'https://mathnodes.com/index.php/meile-dvpn-client-linux-os-x/',
-      } },
     { name:'VALT', logo:window.__resources.ecoValt, imgFilter:'brightness(0)',
       descKey:'apps.valtDesc', desc:'Capture and protect the data you create every day.',
       links: {
@@ -950,12 +943,11 @@ function EcoOSIcon({ k }) {
 function EcosystemGrid() {
   const isMobile = useIsMobile();
   const apps = [
+    { logo:window.__resources.ecoSentinelShield, name:'Sentinel dVPN App', body:tr('ecosystem.shieldBody','Flagship open-source dVPN by Sentinel P2P, WireGuard & V2Ray; Android & iOS.'), href:L2.sentinelShield, builds:[{ k:'android', label:'Android', href:'https://play.google.com/store/apps/details?id=co.sentinel.dvpnapp' }, { k:'apple', label:'iOS & macOS', href:'https://apps.apple.com/us/app/sentinel-shield-dvpn/id6657986086' }] },
+    { logo:window.__resources.ecoNorse,           name:'DVPN App',          body:tr('ecosystem.norseBody','A decentralized VPN experience wrapped in user-friendly apps by NORSE Labs, available on all platforms.'), href:L2.norse, builds:[{ k:'android', label:'Android', href:'https://play.google.com/store/apps/details?id=io.norselabs.dvpn' }, { k:'apple', label:'iOS & macOS', href:'https://apps.apple.com/us/app/dvpn-decentralized-vpn/id6553963594' }, { k:'windows', label:'Windows', href:'https://apps.microsoft.com/detail/9ph6snjxz1v1' }, { k:'linux', label:'Linux', href:'https://norselabs.io/products/dvpn' }] },
     { logo:window.__resources.ecoIndependent,     name:'Independent VPN',   body:tr('ecosystem.independentBody','Free Decentralized VPN on Sentinel-WireGuard & V2Ray; Android & iOS.'), href:L2.independent, builds:[{ k:'android', label:'Android', href:'https://play.google.com/store/apps/details?id=com.bagimsizvpn.app' }, { k:'apple', label:'iOS', href:'https://apps.apple.com/us/app/independent-dvpn/id6468454526' }] },
-    { logo:window.__resources.ecoRyn,             name:'Ryn VPN',           body:tr('ecosystem.rynBody','Sentinel-powered privacy VPN with a clean minimalist interface and a user base of over 10 million people.'), href:L2.rynVpn, builds:[{ k:'android', label:'Android', href:'https://play.google.com/store/apps/details?id=com.secure.cryptovpn' }, { k:'apple', label:'iOS', href:'https://apps.apple.com/app/apple-store/id1493328027' }] },
-    { logo:window.__resources.ecoSentinelShield, name:'Sentinel Shield',   body:tr('ecosystem.shieldBody','Flagship open-source dVPN by Sentinel P2P, WireGuard & V2Ray; Android & iOS.'), href:L2.sentinelShield, builds:[{ k:'android', label:'Android', href:'https://play.google.com/store/apps/details?id=co.sentinel.dvpnapp' }, { k:'apple', label:'iOS & macOS', href:'https://apps.apple.com/us/app/sentinel-shield-dvpn/id6657986086' }] },
-    { logo:window.__resources.ecoNorse,           name:'DVPN by NORSE',     body:tr('ecosystem.norseBody','Decentralized VPN experience wrapped into user-friendly apps for all platforms.'), href:L2.norse, builds:[{ k:'android', label:'Android', href:'https://play.google.com/store/apps/details?id=io.norselabs.dvpn' }, { k:'apple', label:'iOS & macOS', href:'https://apps.apple.com/us/app/dvpn-decentralized-vpn/id6553963594' }, { k:'windows', label:'Windows', href:'https://apps.microsoft.com/detail/9ph6snjxz1v1' }, { k:'linux', label:'Linux', href:'https://norselabs.io/products/dvpn' }] },
     { logo:window.__resources.ecoValt,            name:'VALT',              body:tr('ecosystem.valtBody','VALT is the only app available that allows you to capture and protect the data you create everyday.'), href:L2.valt, builds:[{ k:'android', label:'Android', href:'https://play.google.com/store/apps/details?id=com.hashcash.breadcrumbs' }, { k:'apple', label:'iOS', href:'https://apps.apple.com/us/app/valt-dvpn/id1630660373' }] },
-    { logo:window.__resources.ecoMeile,           name:'MeileVPN',          body:tr('ecosystem.meileBody','Sentinel-powered desktop dVPN for macOS, Linux & Windows.'), href:L2.meile, builds:[{ k:'apple', label:'macOS', href:'https://github.com/MathNodes/meile-gui/releases' }, { k:'windows', label:'Windows', href:'https://github.com/MathNodes/meile-gui/releases' }, { k:'linux', label:'Linux', href:'https://github.com/MathNodes/meile-gui/releases' }] },
+    { logo:window.__resources.ecoRyn,             name:'Ryn VPN',           body:tr('ecosystem.rynBody','Sentinel-powered privacy VPN with a clean minimalist interface and a user base of over 10 million people.'), href:L2.rynVpn, builds:[{ k:'android', label:'Android', href:'https://play.google.com/store/apps/details?id=com.secure.cryptovpn' }, { k:'apple', label:'iOS', href:'https://apps.apple.com/app/apple-store/id1493328027' }] },
   ];
   return (
     <section id="use-dvpn" style={{ background:'transparent', ...A.section, scrollMarginTop:90 }}>

@@ -106,7 +106,6 @@ export const SENTINEL_LINKS = {
   sentinelShield: 'https://shield.sentinel.co/',
   independent: 'https://independentdvpn.com/',
   norse: 'https://norselabs.io/',
-  meile: 'https://mathnodes.com/index.php/meile-dvpn-client-linux-os-x/',
   valt: 'https://valtdata.com/',
   encryptSim: 'https://www.encryptsim.com/',
 
@@ -114,7 +113,4 @@ export const SENTINEL_LINKS = {
   twitter: 'https://x.com/sentinelp2p',
   telegram: 'https://t.me/sentinelp2p',
   discord: 'https://discord.com/invite/mmAA8qF',
-  growthDao: 'https://t.me/sentinelgrowthdao',
-  p2pNews: 'https://t.me/p2pnewswire',
-  bluefrens: 'https://x.com/BluefrensNFT',
 };

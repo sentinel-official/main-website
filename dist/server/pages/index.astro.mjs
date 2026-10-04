@@ -2,7 +2,7 @@ import { e as createComponent, k as renderComponent, r as renderTemplate, h as c
 import 'piccolore';
 import { $ as $$Layout } from '../chunks/Layout_BmbwApO8.mjs';
 import { jsx, jsxs, Fragment } from 'react/jsx-runtime';
-import '../chunks/globals_Cl1Fwrq0.mjs';
+import '../chunks/globals_BYLDc0vu.mjs';
 import * as React$1 from 'react';
 export { renderers } from '../renderers.mjs';
 
@@ -111,7 +111,7 @@ const NAV_MENUS = {
     cols: 2,
     width: 660,
     items: [
-      { tk: "nav.dvpn.downloadTitle", dk: "nav.dvpn.downloadDesc", title: "Download Apps", desc: "Sentinel Shield, Norse, Valt, Meile and more.", href: "#use-dvpn" },
+      { tk: "nav.dvpn.downloadTitle", dk: "nav.dvpn.downloadDesc", title: "Download Apps", desc: "Sentinel dVPN App, DVPN App, VALT and more.", href: "#use-dvpn" },
       { tk: "nav.dvpn.coverageTitle", dk: "nav.dvpn.coverageDesc", title: "Coverage", desc: "110+ Countries, 430+ Cities.", href: L.nodeMap },
       { tk: "nav.dvpn.learnTitle", dk: "nav.dvpn.learnDesc", title: "Learn", desc: "Explore guides, documentation, and more.", href: L.docs },
       { tk: "nav.dvpn.runNodeTitle", dk: "nav.dvpn.runNodeDesc", title: "Run a Node", desc: "Support the network and earn rewards.", href: "#host-dvpn" },
@@ -1712,17 +1712,6 @@ function DvpnPlatIcon({ kind, size = 14, brand }) {
     }
   },
   {
-    name: "Meile dVPN",
-    logo: window.__resources.ecoMeile,
-    descKey: "apps.meileDesc",
-    desc: "Sentinel-powered desktop dVPN for macOS, Linux & Windows.",
-    links: {
-      "macOS": "https://mathnodes.com/index.php/meile-dvpn-client-linux-os-x/",
-      "Linux": "https://mathnodes.com/index.php/meile-dvpn-client-linux-os-x/",
-      "Windows": "https://mathnodes.com/index.php/meile-dvpn-client-linux-os-x/"
-    }
-  },
-  {
     name: "VALT",
     logo: window.__resources.ecoValt,
     imgFilter: "brightness(0)",
@@ -1981,12 +1970,11 @@ function EcoOSIcon({ k }) {
 function EcosystemGrid() {
   const isMobile = useIsMobile();
   const apps = [
+    { logo: window.__resources.ecoSentinelShield, name: "Sentinel dVPN App", body: tr$1("ecosystem.shieldBody", "Flagship open-source dVPN by Sentinel P2P, WireGuard & V2Ray; Android & iOS."), href: L2.sentinelShield, builds: [{ k: "android", label: "Android", href: "https://play.google.com/store/apps/details?id=co.sentinel.dvpnapp" }, { k: "apple", label: "iOS & macOS", href: "https://apps.apple.com/us/app/sentinel-shield-dvpn/id6657986086" }] },
+    { logo: window.__resources.ecoNorse, name: "DVPN App", body: tr$1("ecosystem.norseBody", "A decentralized VPN experience wrapped in user-friendly apps by NORSE Labs, available on all platforms."), href: L2.norse, builds: [{ k: "android", label: "Android", href: "https://play.google.com/store/apps/details?id=io.norselabs.dvpn" }, { k: "apple", label: "iOS & macOS", href: "https://apps.apple.com/us/app/dvpn-decentralized-vpn/id6553963594" }, { k: "windows", label: "Windows", href: "https://apps.microsoft.com/detail/9ph6snjxz1v1" }, { k: "linux", label: "Linux", href: "https://norselabs.io/products/dvpn" }] },
     { logo: window.__resources.ecoIndependent, name: "Independent VPN", body: tr$1("ecosystem.independentBody", "Free Decentralized VPN on Sentinel-WireGuard & V2Ray; Android & iOS."), href: L2.independent, builds: [{ k: "android", label: "Android", href: "https://play.google.com/store/apps/details?id=com.bagimsizvpn.app" }, { k: "apple", label: "iOS", href: "https://apps.apple.com/us/app/independent-dvpn/id6468454526" }] },
-    { logo: window.__resources.ecoRyn, name: "Ryn VPN", body: tr$1("ecosystem.rynBody", "Sentinel-powered privacy VPN with a clean minimalist interface and a user base of over 10 million people."), href: L2.rynVpn, builds: [{ k: "android", label: "Android", href: "https://play.google.com/store/apps/details?id=com.secure.cryptovpn" }, { k: "apple", label: "iOS", href: "https://apps.apple.com/app/apple-store/id1493328027" }] },
-    { logo: window.__resources.ecoSentinelShield, name: "Sentinel Shield", body: tr$1("ecosystem.shieldBody", "Flagship open-source dVPN by Sentinel P2P, WireGuard & V2Ray; Android & iOS."), href: L2.sentinelShield, builds: [{ k: "android", label: "Android", href: "https://play.google.com/store/apps/details?id=co.sentinel.dvpnapp" }, { k: "apple", label: "iOS & macOS", href: "https://apps.apple.com/us/app/sentinel-shield-dvpn/id6657986086" }] },
-    { logo: window.__resources.ecoNorse, name: "DVPN by NORSE", body: tr$1("ecosystem.norseBody", "Decentralized VPN experience wrapped into user-friendly apps for all platforms."), href: L2.norse, builds: [{ k: "android", label: "Android", href: "https://play.google.com/store/apps/details?id=io.norselabs.dvpn" }, { k: "apple", label: "iOS & macOS", href: "https://apps.apple.com/us/app/dvpn-decentralized-vpn/id6553963594" }, { k: "windows", label: "Windows", href: "https://apps.microsoft.com/detail/9ph6snjxz1v1" }, { k: "linux", label: "Linux", href: "https://norselabs.io/products/dvpn" }] },
     { logo: window.__resources.ecoValt, name: "VALT", body: tr$1("ecosystem.valtBody", "VALT is the only app available that allows you to capture and protect the data you create everyday."), href: L2.valt, builds: [{ k: "android", label: "Android", href: "https://play.google.com/store/apps/details?id=com.hashcash.breadcrumbs" }, { k: "apple", label: "iOS", href: "https://apps.apple.com/us/app/valt-dvpn/id1630660373" }] },
-    { logo: window.__resources.ecoMeile, name: "MeileVPN", body: tr$1("ecosystem.meileBody", "Sentinel-powered desktop dVPN for macOS, Linux & Windows."), href: L2.meile, builds: [{ k: "apple", label: "macOS", href: "https://github.com/MathNodes/meile-gui/releases" }, { k: "windows", label: "Windows", href: "https://github.com/MathNodes/meile-gui/releases" }, { k: "linux", label: "Linux", href: "https://github.com/MathNodes/meile-gui/releases" }] }
+    { logo: window.__resources.ecoRyn, name: "Ryn VPN", body: tr$1("ecosystem.rynBody", "Sentinel-powered privacy VPN with a clean minimalist interface and a user base of over 10 million people."), href: L2.rynVpn, builds: [{ k: "android", label: "Android", href: "https://play.google.com/store/apps/details?id=com.secure.cryptovpn" }, { k: "apple", label: "iOS", href: "https://apps.apple.com/app/apple-store/id1493328027" }] }
   ];
   return /* @__PURE__ */ jsxs("section", { id: "use-dvpn", style: { background: "transparent", ...A.section, scrollMarginTop: 90 }, children: [
     /* @__PURE__ */ jsx("style", { children: ".sn-eco-dl { transition:border-color 200ms cubic-bezier(.22,.61,.36,1), background 200ms cubic-bezier(.22,.61,.36,1), color 200ms cubic-bezier(.22,.61,.36,1), transform 200ms cubic-bezier(.22,.61,.36,1); } .sn-eco-dl:hover { border-color:rgba(94,148,255,0.55); background:rgba(38,112,255,0.14); color:#fff; transform:translateY(-1px); }" }),
@@ -2122,35 +2110,6 @@ function CommunityCard({ icon, name, handle, color, href }) {
     }
   );
 }
-function CommunityPill({ icon, label, color, href }) {
-  const [hovered, setHovered] = useS(false);
-  return /* @__PURE__ */ jsxs(
-    "a",
-    {
-      href,
-      target: "_blank",
-      rel: "noopener noreferrer",
-      onMouseEnter: () => setHovered(true),
-      onMouseLeave: () => setHovered(false),
-      style: {
-        display: "inline-flex",
-        alignItems: "center",
-        gap: 8,
-        padding: "8px 16px 8px 12px",
-        borderRadius: 9999,
-        border: `1px solid ${hovered ? color : "#ececec"}`,
-        background: hovered ? `${color}0F` : "#fff",
-        textDecoration: "none",
-        transition: "all 200ms cubic-bezier(.22,.61,.36,1)",
-        boxSizing: "border-box"
-      },
-      children: [
-        /* @__PURE__ */ jsx("span", { style: { display: "inline-flex", alignItems: "center", justifyContent: "center", color, flexShrink: 0, transform: "scale(0.78)", transformOrigin: "center" }, children: icon }),
-        /* @__PURE__ */ jsx("span", { style: { fontFamily: T3.fontBody, fontSize: 13, fontWeight: 500, color: hovered ? "rgba(0,0,0,0.82)" : "rgba(0,0,0,0.6)", whiteSpace: "nowrap", transition: "color 200ms" }, children: label })
-      ]
-    }
-  );
-}
 const IconX = () => /* @__PURE__ */ jsx("svg", { width: "21", height: "20", viewBox: "0 0 21.123 19.093", fill: "currentColor", children: /* @__PURE__ */ jsx("path", { d: "M16.635 0l3.239 0L12.798 8.088 21.123 19.093l-6.518 0L9.5 12.418 3.658 19.093l-3.241 0 7.569-8.651L0 0l6.684 0 4.614 6.101L16.635 0ZM15.499 17.154l1.794 0L5.708 1.837 3.782 1.837 15.499 17.154Z" }) });
 const IconTelegram = () => /* @__PURE__ */ jsx("svg", { width: "22", height: "19", viewBox: "0 0 24 21", fill: "currentColor", children: /* @__PURE__ */ jsx("path", { d: "M23.9 1.8L20.2 20c-.3 1.3-1.1 1.6-2.2 1L12 16.6l-2.9 2.8c-.3.3-.6.6-1.2.6l.4-5.8L19.8 3.3c.5-.4-.1-.6-.7-.2L4.6 13.5 0 12.1C-1 11.8-1 11.1.4 10.5l22.1-8.5c.9-.4 1.8.3 1.4 1.8Z" }) });
 const IconGitHub = () => /* @__PURE__ */ jsx("svg", { width: "22", height: "22", viewBox: "0 0 24 24", fill: "currentColor", children: /* @__PURE__ */ jsx("path", { d: "M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" }) });
@@ -2165,11 +2124,6 @@ function ContactSection$1() {
     { icon: /* @__PURE__ */ jsx(IconDiscord, {}), name: "Discord", handle: "Sentinel Network", color: "#5865F2", href: L3.discord },
     { icon: /* @__PURE__ */ jsx(IconGitHub, {}), name: "GitHub", handle: "sentinel-official", color: "#24292F", href: L3.github }
   ];
-  const secondary = [
-    { icon: /* @__PURE__ */ jsx(IconTelegram, {}), label: "Growth DAO", color: "#229ED9", href: L3.growthDao },
-    { icon: /* @__PURE__ */ jsx(IconTelegram, {}), label: "p2p News", color: "#229ED9", href: L3.p2pNews },
-    { icon: /* @__PURE__ */ jsx(IconX, {}), label: "Bluefrens", color: "#0F1419", href: L3.bluefrens }
-  ];
   ({
     fontFamily: T3.fontBody});
   ({ fontFamily: T3.fontBody});
@@ -2180,11 +2134,7 @@ function ContactSection$1() {
         /* @__PURE__ */ jsx("h2", { style: { fontFamily: T3.fontHeading, fontWeight: 700, fontSize: "clamp(31px,6vw,48px)", lineHeight: 1.12, color: "rgba(0,0,0,0.8)", margin: 0, letterSpacing: "-0.005em" }, children: tr("community.heading", "Join the Community") }),
         /* @__PURE__ */ jsx("p", { style: { fontFamily: T3.fontBody, fontSize: 16, lineHeight: "22px", color: "rgba(0,0,0,0.5)", margin: 0 }, children: tr("community.subtitle", "The Sentinel community goes beyond the chain.") })
       ] }),
-      /* @__PURE__ */ jsx("div", { style: { display: "grid", gridTemplateColumns: isMobile ? "1fr" : "1fr 1fr", gap: 12 }, children: primary.map((c) => /* @__PURE__ */ jsx(CommunityCard, { icon: c.icon, name: c.name, handle: c.handle, color: c.color, href: c.href }, c.name)) }),
-      /* @__PURE__ */ jsxs("div", { style: { display: "flex", flexDirection: "column", gap: 12, alignItems: "center" }, children: [
-        /* @__PURE__ */ jsx("span", { style: { fontFamily: T3.fontBody, fontWeight: 600, fontSize: 11, letterSpacing: "0.14em", textTransform: "uppercase", color: "rgba(0,0,0,0.35)" }, children: tr("community.more", "More from the community") }),
-        /* @__PURE__ */ jsx("div", { style: { display: "flex", flexWrap: "wrap", gap: 8, justifyContent: "center" }, children: secondary.map((c) => /* @__PURE__ */ jsx(CommunityPill, { icon: c.icon, label: c.label, color: c.color, href: c.href }, c.label)) })
-      ] })
+      /* @__PURE__ */ jsx("div", { style: { display: "grid", gridTemplateColumns: isMobile ? "1fr" : "1fr 1fr", gap: 12 }, children: primary.map((c) => /* @__PURE__ */ jsx(CommunityCard, { icon: c.icon, name: c.name, handle: c.handle, color: c.color, href: c.href }, c.name)) })
     ] }),
     SHOW_CONTACT_FORM
   ] }) }) });
@@ -2199,12 +2149,11 @@ function Footer$1() {
       ["Explorer", L3.explorer, "footer.exploreExplorer"]
     ] },
     { head: "dVPN", headKey: "nav.dvpn", links: [
-      ["Sentinel Shield", L3.sentinelShield, "footer.dvpnShield"],
+      ["Sentinel dVPN App", L3.sentinelShield, "footer.dvpnShield"],
       ["Independent VPN", L3.independent, "footer.dvpnIndependent"],
-      ["DVPN by NORSE", L3.norse, "footer.dvpnNorse"],
+      ["DVPN App", L3.norse, "footer.dvpnNorse"],
       ["VALT", L3.valt, "footer.dvpnValt"],
-      ["Ryn dVPN", L3.rynVpn, "footer.dvpnRyn"],
-      ["Meile dVPN (beta)", L3.meile, "footer.dvpnMeile"]
+      ["Ryn dVPN", L3.rynVpn, "footer.dvpnRyn"]
     ] },
     { head: "Build", headKey: "nav.build", links: [
       ["Plan Manager", L3.planManager, "footer.buildPlanManager"],
